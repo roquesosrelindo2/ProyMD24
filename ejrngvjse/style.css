@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+@keyframes textocolorido{
+    0%{
+        color:rgb(255,0,0);
+        transform: scale(1);
+    }
+    50%{
+        color: rgb(0, 255, 0);
+        transform: scale(1);
+    }
+    100%{
+        color:rgb(0,0,255)
+    }
+}
+body{
+    background-color: dimgrey;
+}
+.textocentrado {
+    text-align: center;
+    animation-name: textocolorido;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.header {
+    background-color: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li{
+    float:left;
+}
+.navbar li a{
+    display:block;
+    background-color:rgb(48, 47, 47);
+    color:azure;
+    display: flex;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.tarjetitas {
+    align-items: center;
+    text-align: center;
+}
+.tarjetitas h1{
+    color:azure
+}
+.ordendetarjetitas{
+    display:flex;
+    justify-content: space-around;
+    padding: 50px;
+}
